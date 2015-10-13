@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Launch Page</title>
+    
+    <style>
+        
+        #UIArea
+        {
+            border: solid black;
+            width: 500px;
+            height: 660px;
+            background-color: aliceblue;
+            
+            border-radius: 15px;
+            
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        #Heading
+        {
+            text-align: center;
+        }
+        
+        #timer
+        {
+            font-size: 20px;
+            font-family: sans-serif;
+            margin-bottom: 1px;
+            text-align: center;
+        }
+        
+        #LaunchButton
+        {
+            text-align: center;
+        }
+        
+        #Start
+        {
+            font-size: 35px;
+            margin-top: 20px;
+            color: green;
+            border-radius: 25px;
+            background-color: ghostwhite;
+        }
+        
+        #Stop
+        {
+            font-size: 35px;
+            margin-top: 20px;
+            color: red;
+            border-radius: 25px;
+            background-color: ghostwhite;
+        }
+        
+        #Clear
+        {
+            font-size: 35px;
+            margin-top: 20px;
+            border-radius: 25px;
+            color: blue;
+            background-color: ghostwhite;
+        }
+        
+        #map
+        {
+            margin-left: 5%;
+            height: 58%;
+            width: 90%;
+            border-style: solid;
+            border-width: 1.5px;
+            border-radius: 15px;
+        }
+        
+        ul#list
+        {
+            padding: 10px;
+        }
+        
+        ul#list li 
+        {
+            display:inline;
+        }
+        
+        ul#list li a
+        {
+            margin-left: 2px;
+            margin-right: 2px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    
+    <div id = "UIArea">
+        
+        <h1 id = "Heading">Record</h1>
+        
+        <div id = "map"></div>
+        
+        <p id = "timer">00:00:00<br>0.00 KM</p>
+    
+        <div id = "LaunchButton">
+            
+            <button id = "Start" onClick = "initMap()">Start</button>
+            <button id = "Stop">Stop</button>
+            <button id = "Clear">Clear</button>
+
+        </div>
+            
+        <ul id = "list">
+            
+            <li>
+                <a href = "LaunchPage.html">
+
+                    Home
+
+                </a>
+            </li>
+            
+            <li>
+                <a href = "Help.html">
+
+                    Help
+
+                </a>
+            </li>
+            
+            <li>
+                <a href = "TeamProfile.html">
+
+                    About
+
+                </a>
+            </li>
+            
+        </ul>                    
+    </div>
+    
+    <script>
+        //This whole part is from "https://developers.google.com/maps/documentation/javascript/examples/map-geolocation".
+        var map;
+        
+        function initMap()
+        {
+            map = new google.maps.Map(document.getElementById('map'), 
+            {
+                center: {lat: -37.9120467, lng: 145.1343136},
+                zoom: 15
+            });
+        }
+    </script>
+    
+    <script async defer src="https://maps.googleapis.com/maps/api/js?v=3&amp;key=&amp;callback=initMap"></script>
+    
+</body>
+
+</html>
