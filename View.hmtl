@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Launch Page</title>
+    
+    <style>
+        
+        #UIArea
+        {
+            border: solid black;
+            width: 500px;
+            height: 600px;
+            background-color: aliceblue;
+            
+            border-radius: 15px;
+            
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        #Heading
+        {
+            text-align: center;
+        }
+        
+        #LaunchButton
+        {
+            text-align: center;
+        }
+        
+        #Home
+        {
+            font-size: 35px;
+            margin-top: 40px;
+        }
+        
+        #subHeading
+        {
+            font-weight: bold;
+            font-size: 20px;
+            
+            text-align: center;
+        }
+        
+        ul#list
+        {
+            padding: 10px;
+        }
+        
+        ul#list li 
+        {
+            display:inline;
+        }
+        
+        ul#list li a
+        {
+            margin-left: 2px;
+            margin-right: 2px;
+        }
+        
+        ul#content
+        {
+            border: solid black;
+            width:18%;
+        }
+        
+        ul#content{overflow:hidden; overflow-y:scroll;}
+        
+    </style>
+</head>
+
+<body>
+    
+    <div id = "UIArea">
+        
+        <h1 id = "Heading">View</h1>
+    
+        <div id = "LaunchButton">
+
+            <button id = "Home" onClick = "location.href = 'LaunchPage.html'">Home</button>
+
+        </div>
+        
+        <div id = "SavedContent">
+        
+            <p id = "subHeading">
+            
+                Route
+                
+            </p>
+            
+            <ul id = "scontent">
+                <li>None</li>
+                <li>None</li>
+                <li>None</li>
+                <li>None</li>
+                <li>None</li>
+                <li>None</li> 
+                <li>None</li> 
+                <li>None</li>
+                <li>None</li>
+                <li>None</li>
+                <li>None</li>
+                <li>None</li>
+                <li>None</li>
+            </ul>
+            
+        </div>
+            
+        <ul id = "list">
+            
+            <li>
+                <a href = "LaunchPage.html">
+
+                    Home
+
+                </a>
+            </li>
+            
+            <li>
+                <a href = "Help.html">
+
+                    Help
+
+                </a>
+            </li>
+            
+            <li>
+                <a href = "TeamProfile.html">
+
+                    About
+
+                </a>
+            </li>
+            
+        </ul>
+                    
+    </div>
+    
+</body>
+
+</html>
