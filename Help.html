@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Launch Page</title>
+    
+    <style>
+        
+        #UIArea
+        {
+            border: solid black;
+            width: 500px;
+            height: 1000px;
+            background-color: aliceblue;
+            
+            border-radius: 15px;
+            
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        #Heading
+        {
+            text-align: center;
+        }
+        
+        #subHeading
+        {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 1px;
+            margin-bottom: 0px;
+        }
+        
+        #LaunchButton
+        {
+            text-align: center;
+        }
+        
+        #Home
+        {
+            font-size: 35px;
+            margin-top: 40px;
+        }
+        
+        ul#list
+        {
+            padding: 10px;
+        }
+        
+        ul#list li 
+        {
+            display:inline;
+        }
+        
+        ul#list li a
+        {
+            margin-left: 2px;
+            margin-right: 2px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    
+    <div id = "UIArea">
+        
+        <h1 id = "Heading">Help</h1>
+    
+        <p id = "Help">
+            
+            
+            <p id = "subHeading">&#9728; Launch Page</p>
+        
+            <br>
+            &#9745; Initial page for users, should contain some sort of link to the next page or features / pages of the app
+            
+            <br><br>
+            
+            <p id = "subHeading">&#9728; Record Page</p>
+        
+            <br>
+            &#9745; Start recording route function. This function will start recording the route.
+            <br>
+            &#9745; Stop recording route function. This functions stops recording, if it was recording a route.
+            <br>
+            &#9745; Clear recorded route function. This function clears the recorded route and resets the
+            record page to a clean slate.
+            <br>
+            &#9745; Save recorded route function. This function saves the recorded route to the device&#146;s local
+            storage.
+            <br>
+            &#9745; While recording, the route should be clearly displayed on the screen to the user using
+            either lines or breadcrumbs (dots).
+            <br>
+            &#9745; The page&#146;s state should be visually represented (i.e. recording or not recording)
+            <br>
+            &#9745; The current location and accuracy of that estimated location should be also always shown
+            to the user.
+            <br>
+            &#9745; The starting point and ending point of the route should be clearly labelled, even while
+            recording (while recording just the starting point).
+            <br>
+            &#9745; When saving the route, the user should be able to enter a name for the route to be saved.
+            
+            <br><br>
+            
+            <p id = "subHeading">&#9728; View Page</p>
+        
+            <br>
+            &#9745; The user should be able to select a route to display
+            <br>
+            &#9745; The route should be shown on the screen with the start and end points labelled.
+            <br>
+            &#9745; Only one selected route should be shown at any time.
+            <br>
+            &#9745; The screen should also show the average speed, total distance and total time taken for the
+            selected route.
+            <br>
+            &#9745; The user should be able to delete a route
+            <br>
+            &#9745; If there are no existing routes, then the delete function should not be enabled
+            
+        </p>
+        <div id = "LaunchButton">
+
+            <button id = "Home" onClick = "location.href = 'LaunchPage.html'">Home</button>
+
+        </div>
+            
+        <ul id = "list">
+            
+            <li>
+                <a href = "LaunchPage.html">
+
+                    Home
+
+                </a>
+            </li>
+            
+            <li>
+                <a href = "Help.html">
+
+                    Help
+
+                </a>
+            </li>
+            
+            <li>
+                <a href = "TeamProfile.html">
+
+                    About
+
+                </a>
+            </li>
+            
+        </ul>
+                    
+    </div>
+    
+</body>
+
+</html>
